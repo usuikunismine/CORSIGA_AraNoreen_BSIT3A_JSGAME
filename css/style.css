@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Montserrat');
 
 body {
 	width: 550px;
@@ -10,11 +10,16 @@ h1 {
 	border-bottom: 1px solid black;
 }
 
+#message {
+	font-size: 18pt;
+	font-family: 'Montserrat', sans-serif;
+}
 
 .Square{
 			height: 80px;
 			width: 80px;
 			font-size: 45pt;
 			text-align: center;
+			font-family: 'Amatic SC', cursive;
 
 		}
