@@ -3,5 +3,5 @@ function startGame() {
 }
 
 function nextMove(square) {
-	
+	square.innerText = document.turn;
 }
