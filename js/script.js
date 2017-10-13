@@ -1,6 +1,6 @@
 function startGame() {
 	document.turn = "X";
-	setMessage(document.turn + " get's to start");
+	setMessage(document.turn + " get's to start.")
 }
 
 function setMessage(msg) {
@@ -12,17 +12,20 @@ function nextMove(square) {
 		square.innerText = document.turn;
 		nextTurn();
 	} else {
-		setMessage("pick another square");
+		setMessage("pick another square")
 	}
 }
 
 function nextTurn() {
-	if(document.turn == "X") {
+	if (checkForWinner(document.turn)) {
+		setMessage ("Congratulations " + document.turn + ", you won!")
+	}else if(document.turn == "X") {
 		document.turn = "O";
+		setMessage("It's " + document.turn + "'s turn.")
 	} else {
 		document.turn = "X";
+		setMessage("It's " + document.turn + "'s turn.")
 	}
-	setMessage("It's " + document.turn + "'s turn.");
 }
 
 function checkForWinner(move) {
@@ -34,13 +37,13 @@ function checkForWinner(move) {
 		checkRow(2, 5, 8, move) ||
 		checkRow(3, 6, 9, move) ||
 		checkRow(1, 5, 9, move) ||
-		checkRow(3, 5, 7, move)) || {
+		checkRow(3, 5, 7, move)) {
 		result = true;
 	}
 	return result;
 }
 
-function checkRow(a,b,c, move) {
+function checkRow(a, b, c, move) {
 	var result = false;
 	if (getBox(a) == move && getBox(b) == move && getBox(c) == move) {
 		result = true;
@@ -48,6 +51,6 @@ function checkRow(a,b,c, move) {
 	return result;
 }
 
-function getRow(number) {
+function getBox(number) {
 	return document.getElementById("s" + number).innerText;
 }
