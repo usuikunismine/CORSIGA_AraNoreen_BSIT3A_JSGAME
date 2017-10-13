@@ -17,6 +17,12 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+#startover {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration:none;
+	color: black;
+}
+
 .Square{
 			height: 80px;
 			width: 80px;
