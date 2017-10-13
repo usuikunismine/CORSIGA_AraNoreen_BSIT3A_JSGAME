@@ -8,8 +8,12 @@ function setMessage(msg) {
 }
 
 function nextMove(square) {
-	square.innerText = document.turn;
-	nextTurn();
+	if (square.innerText == '') {
+		square.innerText = document.turn;
+		nextTurn();
+	} else {
+		setMessage("pick another square");
+	}
 }
 
 function nextTurn() {
