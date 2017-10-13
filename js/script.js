@@ -1,6 +1,6 @@
 function startGame() {
 	document.turn = "X";
-	setMessage(document.turn + " get's to start.")
+	setMessage(document.turn + " start.")
 }
 
 function setMessage(msg) {
@@ -12,13 +12,13 @@ function nextMove(square) {
 		square.innerText = document.turn;
 		nextTurn();
 	} else {
-		setMessage("pick another square")
+		setMessage("Pick another space.")
 	}
 }
 
 function nextTurn() {
 	if (checkForWinner(document.turn)) {
-		setMessage ("Congratulations " + document.turn + ", you won!")
+		setMessage ("Congratulations! " + document.turn + " won.")
 	}else if(document.turn == "X") {
 		document.turn = "O";
 		setMessage("It's " + document.turn + "'s turn.")
