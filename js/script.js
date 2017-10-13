@@ -29,10 +29,10 @@ function nextTurn() {
 		document.winner = document.turn;
 	}else if(document.turn == "X") {
 		document.turn = "O";
-		setMessage("It's " + document.turn + "'s turn.")
+		setMessage("IT'S " + document.turn + "'S TURN.")
 	} else {
 		document.turn = "X";
-		setMessage("It's " + document.turn + "'s turn.")
+		setMessage("IT'S " + document.turn + "'S TURN.")
 	}
 }
 
