@@ -22,4 +22,13 @@ function nextTurn() {
 	} else {
 		document.turn = "X";
 	}
+	setMessage("It's " + document.turn + "'s turn.");
+}
+
+function checkRow(a,b,c, move) {
+
+}
+
+function getRow(number) {
+	
 }
