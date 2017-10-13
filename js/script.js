@@ -30,5 +30,5 @@ function checkRow(a,b,c, move) {
 }
 
 function getRow(number) {
-	
+	return document.getElementById("s" + number).innerText;
 }
